@@ -32,12 +32,13 @@ $(document).ready(function(){
       alert("No existe el calcetin "+nombre);
     }else{
       var obj = JSON.parse(js);
-      var elements = document.querySelectorAll("input");
-      
-      for (var i = 0; i < elements.length; ++i) {
-        var element = elements[i];
-        element.value = obj.nombreCalcetin;
-      }
+      document.getElementById("nombreCalcetin").value = obj.nombreCalcetin;
+      document.getElementById("marcaCalcetin").value = obj.marcaCalcetin;
+      document.getElementById("colorCalcetin").value = obj.colorCalcetin;
+      document.getElementById("tallaCalcetin").value = obj.tallaCalcetin;
+      document.getElementById("tipoCalcetin").value = obj.tipoCalcetin;
+      document.getElementById("precioCalcetin").value = obj.precioCalcetin;
+      document.getElementById("imagenCalcetin").value = obj.imagenCalcetin;      
     }
   })
 });
